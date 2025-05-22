@@ -556,7 +556,7 @@
 
                             <section>
                                 <h3>Paper Wireframe</h3>
-                                <img src="img/ridesharing-wireframe.png" alt="Paper Wireframe" />
+                                <img src="img/ride-paper.jpg" alt="Paper Wireframe" />
                             </section>
 
                             <section>
@@ -711,7 +711,7 @@
 
                             <section>
                                 <h3>Paper Wireframe</h3>
-                                <img src="img/cake-wirefram.png" alt="Paper Wireframe" />
+                                <img src="img/cake-paper.jpg" alt="Paper Wireframe" />
                             </section>
 
                             <section>
@@ -835,6 +835,10 @@
                                 </div>
 
                                 <div id="designContent">
+                                    <div>
+                                        <h4>Paper Wireframe</h4>
+                                        <img id="wireframe" src="img/camp-mobie-paper.jpg" alt="wireframe Design" />
+                                    </div>
                                     <div>
                                         <h4>Low Fidelity Design</h4>
                                         <img id="lofiImage" src="img/campease-mobile-lofi.png"
@@ -1154,6 +1158,7 @@
         <script>
             function toggleDesignView() {
                 const isChecked = document.getElementById('designToggle').checked;
+                const paperwireframe = document.getElementById('wireframe');
                 const lofiImg = document.getElementById('lofiImage');
                 const hifiImg = document.getElementById('hifiImage');
                 const prototypeImage = document.getElementById('prototypeImage');
@@ -1162,6 +1167,7 @@
 
                 if (isChecked) {
                     // Website View
+                    wireframe.src = "img/camp-paper.jpg";
                     lofiImg.src = "img/campease-website-lofi.png";
                     hifiImg.src = "img/campease-website-hifi.png";
                     prototypeImage.src = "img/campease-website-proto.png"; // NEW
@@ -1169,6 +1175,7 @@
                     label.textContent = "Switched to: Website";
                 } else {
                     // Mobile App View
+                    wireframe.src = "img/camp-mobie-paper.jpg";
                     lofiImg.src = "img/campease-mobile-lofi.png";
                     hifiImg.src = "img/campease-mobile-hifi.png";
                     prototypeImage.src = "img/campease-monile-proto.png"; // NEW
